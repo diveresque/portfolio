@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Basic set-up based on tute by simpletut.com.
+
 ## Available Scripts
 
 In the project directory, you can run:
