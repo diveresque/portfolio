@@ -1,0 +1,25 @@
+//Vars
+
+$black: #010000;
+$white: #ffffff;
+$blue: #473B91;
+$blue-grey: #52688c;
+$light-blue: #adc0ed;
+$burnt-orange: #A53E02;
+$mustard: #cea810;
+
+//Mixins
+
+@mixin translateY($e) {
+	-webkit-transform: translateY($e);
+		-moz-transform: translateY($e);
+			transform: translateY($e);
+}
+
+body {
+	font-size: 18px;
+	font-weight: 400;
+	font-family: Palatino, Arial;
+
+
+}

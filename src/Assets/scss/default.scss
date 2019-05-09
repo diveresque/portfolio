@@ -1,0 +1,92 @@
+@import "_config.scss";
+
+header {
+	position: relative;
+	display: block;
+	width: 100%;
+	background: $blue-grey;
+	color: $white;
+	height: 90px;
+
+	.logo {
+		position: absolute;
+		top: 50%; left: 15px;
+		@include translateY(-50%);
+
+		img {
+			width: 10%; // works but not sure if correct approach
+		}
+	}
+
+	nav,
+	nav ul,
+	nav ul li {
+		margin: 0;
+		padding: 0;
+
+		a {
+			color: $mustard;
+		}
+	}
+
+	nav {
+		position: absolute;
+		top: 50%; right: 15px;
+		@include translateY(-50%);
+
+		ul li {
+			list-style-type: none;
+			display: inline-block;
+			margin-right: 10px; 
+		}
+
+	}
+
+}
+
+body {
+	.homepage {
+
+		img {
+			  width: 100%;
+			  object-fit: cover; // ensures picture doesnt get squashed
+			  height: 300px;
+		}
+
+		.mainhome {
+			background-color: $light-blue;
+			height: 200px;
+
+			.welcome {
+				float: left;
+				width: 50%;
+				padding: 20px;
+				// needs something for mobile version - text overflowing
+			}
+
+			.homebuttons {
+				margin-left: 50%; // same as .welcome width so divs are side by side
+				min-height: 200px;
+				display: flex;
+  				align-items: center;
+  				justify-content: center;
+				
+				.btn {
+					margin-left: 4px; 
+					margin-right: 4px;				
+				}
+			}		
+		}
+	}
+}
+
+footer {
+	position: absolute;
+	display: block;
+	width: 100%;
+	background: $blue-grey;
+	color: $mustard;
+	height: 70px;
+	text-align: center;
+	line-height: 70px; //same as height to vertically centre text
+}
