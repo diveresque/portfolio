@@ -1,3 +1,5 @@
+// gulpfile based on React/Sass tutorial at https://youtu.be/nusgoj74a3Y
+// by Simpletut
 'use strict';
 
 // dependencies
